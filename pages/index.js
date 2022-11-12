@@ -2,6 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import React from "react";
 import Hero from "./Hero";
+import Projects from "./Projects";
 export default function Home() {
   return (
     <div>
@@ -11,10 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-screen bg-gradient-to-b flex flex-col">
-         
+
 
         <main className="flex-1">
-   <Hero/>
+          <Hero />
+          <Projects />
         </main>
 
         <footer className="px-8 py-12 border-t border-gray-800">
