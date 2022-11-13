@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Script from "next/script";
 import React from "react";
+import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import Info from "./Info";
+import Certificate from './Certificate';
 export default function Home() {
   return (
     <div>
@@ -14,18 +17,13 @@ export default function Home() {
       <div className="h-screen bg-gradient-to-b flex flex-col">
 
 
-        <main className="flex-1">
-          <Hero />
-          <Projects />
-        </main>
+        <Header />
+        <Hero />
+        <Projects />
+        <Info />
+        <Certificate />
 
-        <footer className="px-8 py-12 border-t border-gray-800">
-          <div className="px-8 font-medium text-center">
-            <a href="https://github.com/andrejjurkin/create-tailwind-app">
-              Create Tailwind
-            </a>
-          </div>
-        </footer>
+
       </div>
       <Script src="https://buttons.github.io/buttons.js" />
     </div>
